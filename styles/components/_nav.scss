@@ -1,0 +1,45 @@
+.navbar_item  > a{
+    color : $dark-blue !important;
+    font-size: 2rem;
+    font-weight: 400;
+    &:hover {
+        color : $dark-grayish-blue !important;
+    }
+
+    @media(max-width : $breakpoint-md) {
+    font-weight: 700;
+
+    }
+}
+
+.header {
+    position: fixed !important;
+    top: 0 !important ;
+    left: 0  !important;
+    width: 100% !important;
+
+    @media (max-width : $breakpoint-md) {
+        .navbar_list {
+                width: 80%!important;
+                margin-top: 30px;
+                padding: 4rem;
+                margin-inline: auto;
+                box-shadow: -3px 8px 10px 0px rgba(0,0,0,0.071);
+                background-color: white;
+                border-radius: 12px;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                & > li {}
+}
+    }
+    
+}
+
+.navbar-toggler {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    
+  }

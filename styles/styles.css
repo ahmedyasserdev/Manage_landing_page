@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+html,
+body {
+  overflow-x: hidden;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  background-color: hsl(0, 0%, 98%);
+  height: 5000px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  width: 90% !important;
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+@media (max-width: 767px) {
+  .section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.button {
+  border-radius: 9999px;
+  background-color: hsl(12, 88%, 59%) !important;
+  box-shadow: -1px 2px 2px 1px hsl(12, 88%, 59%);
+  transition: all 0.15s ease;
+  color: white;
+  padding: 10px 30px !important;
+  font-size: 1.5rem;
+}
+.button:hover {
+  opacity: 0.8 !important;
+  color: white;
+  box-shadow: none;
+}
+
+.text-1 {
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.text-2 {
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.text-3 {
+  font-size: 3rem;
+  line-height: 120%;
+}
+
+.text-4 {
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.text-5 {
+  font-size: 5rem;
+  line-height: 120%;
+}
+
+.text-6 {
+  font-size: 6rem;
+  line-height: 120%;
+}
+
+.text-7 {
+  font-size: 7rem;
+  line-height: 120%;
+}
+
+.text-8 {
+  font-size: 8rem;
+  line-height: 120%;
+}
+
+.text-9 {
+  font-size: 9rem;
+  line-height: 120%;
+}
+
+.text-10 {
+  font-size: 10rem;
+  line-height: 120%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  height: 34px;
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: hsl(228, 39%, 23%);
+  color: inherit;
+  opacity: 1;
+  transition: none 0.25s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  -webkit-transition: none 0.25s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  -moz-transition: none 0.25s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  -ms-transition: none 0.25s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  -o-transition: none 0.25s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+}
+
+/***** Collapse Animation *****/
+.bar--top {
+  bottom: calc(50% + 11px + 2px);
+  transition-property: bottom, margin, transform;
+  transition-delay: 0.35s, 0s, 0s;
+}
+
+.bar--middle {
+  top: calc(50% - 2px);
+  transition-property: top, opacity;
+  transition-duration: 0.35s, 0s;
+  transition-delay: 0.455s, 0.455s;
+}
+
+.bar--bottom {
+  top: calc(50% + 11px + 2px);
+  transition-property: top, transform;
+  transition-delay: 0s;
+}
+
+#checkbox:checked + .toggle .bar--top {
+  bottom: calc(50% - 11px - 4px);
+  margin-bottom: 13px;
+  transform: rotate(45deg);
+  transition-delay: 0.105s, 0.455s, 0.455s;
+}
+
+#checkbox:checked + .toggle .bar--middle {
+  top: calc(50% + 11px);
+  opacity: 0;
+  transition-duration: 0.35s, 0s;
+  transition-delay: 0s, 0.35s;
+}
+
+#checkbox:checked + .toggle .bar--bottom {
+  top: calc(50% - 2px);
+  transform: rotate(-45deg);
+  transition-delay: 0.455s, 0.455s;
+}
+
+.navbar_item > a {
+  color: hsl(228, 39%, 23%) !important;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.navbar_item > a:hover {
+  color: hsl(227, 12%, 61%) !important;
+}
+@media (max-width: 991px) {
+  .navbar_item > a {
+    font-weight: 700;
+  }
+}
+
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+@media (max-width: 991px) {
+  .header .navbar_list {
+    width: 80% !important;
+    margin-top: 30px;
+    padding: 4rem;
+    margin-inline: auto;
+    box-shadow: -3px 8px 10px 0px rgba(0, 0, 0, 0.071);
+    background-color: white;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}/*# sourceMappingURL=styles.css.map */
