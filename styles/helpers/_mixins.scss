@@ -1,0 +1,15 @@
+@mixin button ($bg  , $color) {
+    border-radius: 9999px;
+    background-color:$bg!important ;
+    box-shadow: -1px 2px 2px 1px  $bg;
+    transition: all 0.15s ease; 
+    color: $color;
+    padding: 10px 30px  !important ;
+    font-size: 1.5rem;
+    max-width: max-content;
+    &:hover {
+      opacity: 0.8  !important ;
+      color : $color ;
+      box-shadow: none;
+    }
+  }

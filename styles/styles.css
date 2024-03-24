@@ -77,6 +77,23 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
+.button-light {
+  border-radius: 9999px;
+  background-color: hsl(0, 0%, 98%) !important;
+  box-shadow: -1px 2px 2px 1px hsl(0, 0%, 98%);
+  transition: all 0.15s ease;
+  color: hsl(12, 88%, 59%);
+  padding: 10px 30px !important;
+  font-size: 1.5rem;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.button-light:hover {
+  opacity: 0.8 !important;
+  color: hsl(12, 88%, 59%);
+  box-shadow: none;
+}
+
 .text-1 {
   font-size: 1rem;
   line-height: 120%;
@@ -282,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .illustration-intro::before {
   content: "";
-  background: url("/images/bg-tablet-pattern.svg") right top/cover no-repeat;
+  background: url("../../images/bg-tablet-pattern.svg") right top/cover no-repeat;
   position: absolute;
   top: -150px;
   right: -100px;
@@ -328,4 +345,16 @@ h1, h2, h3, h4, h5, h6 {
 .feature_content .feature_content-title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.CTA {
+  background: url("../../images/bg-simplify-section-mobile.svg") hsl(12, 88%, 59%) no-repeat;
+}
+@media (min-width: 991px) {
+  .CTA {
+    background: url("../../images/bg-simplify-section-desktop.svg") hsl(12, 88%, 59%) center/cover no-repeat;
+  }
+}
+.CTA .title {
+  color: hsl(0, 0%, 98%) !important;
 }/*# sourceMappingURL=styles.css.map */

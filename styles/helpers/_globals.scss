@@ -65,20 +65,14 @@ h1 ,h2 ,h3,h4,h5,h6 {
     }
   }
 
+  
   .button {
-    border-radius: 9999px;
-    background-color:$bright-red !important ;
-    box-shadow: -1px 2px 2px 1px  $bright-red ;
-    transition: all 0.15s ease; 
-    color: white;
-    padding: 10px 30px  !important ;
-    font-size: 1.5rem;
-    max-width: max-content;
-    &:hover {
-      opacity: 0.8  !important ;
-      color : white ;
-      box-shadow: none;
-    }
+    @include button($bright-red , white);
+  }
+
+  .button-light {
+    @include button($very-light-gray, $bright-red);
+
   }
 
   @for $i from 1 through 10 {

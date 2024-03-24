@@ -32,7 +32,7 @@ const  createTestimonialElement = (testimonial) => {
   testimonialElement.innerHTML = `
     <img src="${testimonial.avatar}" width = "100px" class ="mx-auto object-fit-cover" alt="${testimonial.name}">
     <h5 class="text-2 my-4" >${testimonial.name}</h5>
-    <p class = "w-100 mx-auto" >${testimonial.quote}</p>
+    <p class = "w-75 px-4 px-md-0 d-block mx-auto" >${testimonial.quote}</p>
   `;
 
   return testimonialElement;
@@ -47,12 +47,28 @@ testimonials.forEach(testimonial => {
 
 
 
+// Initialize Swiper
 const swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 30,
-  freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    // When window width is <= 767px (mobile)
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // When window width is > 767px (desktop)
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
   },
 });

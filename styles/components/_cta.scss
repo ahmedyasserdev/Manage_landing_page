@@ -1,0 +1,13 @@
+.CTA {
+    background: url("../../images/bg-simplify-section-mobile.svg") $bright-red no-repeat  ;
+    @media(min-width : $breakpoint-md ) {
+            background: url("../../images/bg-simplify-section-desktop.svg") $bright-red center/cover no-repeat;
+
+        }
+
+        
+
+    .title {
+        color: $very-light-gray !important;
+    }
+}
