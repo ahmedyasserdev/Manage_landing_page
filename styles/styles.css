@@ -348,11 +348,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .CTA {
-  background: url("../../images/bg-simplify-section-mobile.svg") hsl(12, 88%, 59%) no-repeat;
+  background: url("../../images/bg-simplify-section-mobile.svg") hsl(12, 88%, 59%) no-repeat !important;
 }
 @media (min-width: 991px) {
   .CTA {
-    background: url("../../images/bg-simplify-section-desktop.svg") hsl(12, 88%, 59%) center/cover no-repeat;
+    background: url("../../images/bg-simplify-section-desktop.svg") hsl(12, 88%, 59%) center/cover no-repeat !important;
   }
 }
 .CTA .title {

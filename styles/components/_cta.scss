@@ -1,7 +1,7 @@
 .CTA {
-    background: url("../../images/bg-simplify-section-mobile.svg") $bright-red no-repeat  ;
+    background: url("../../images/bg-simplify-section-mobile.svg") $bright-red no-repeat !important ;
     @media(min-width : $breakpoint-md ) {
-            background: url("../../images/bg-simplify-section-desktop.svg") $bright-red center/cover no-repeat;
+            background: url("../../images/bg-simplify-section-desktop.svg") $bright-red center/cover no-repeat !important;
 
         }
 
