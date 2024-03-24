@@ -15,6 +15,10 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
 }
 
 html {
@@ -299,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .illustration-intro::before {
   content: "";
-  background: url("../../images/bg-tablet-pattern.svg") right top/cover no-repeat;
+  background: url("../images/bg-tablet-pattern.svg") right top/cover no-repeat;
   position: absolute;
   top: -150px;
   right: -100px;
@@ -348,13 +352,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .CTA {
-  background: url("../../images/bg-simplify-section-mobile.svg") hsl(12, 88%, 59%) no-repeat !important;
+  background: url("../images/bg-simplify-section-mobile.svg") hsl(12, 88%, 59%) no-repeat !important;
+  padding-block: 7rem;
 }
 @media (min-width: 991px) {
   .CTA {
-    background: url("../../images/bg-simplify-section-desktop.svg") hsl(12, 88%, 59%) center/cover no-repeat !important;
+    background: url("../images/bg-simplify-section-desktop.svg") hsl(12, 88%, 59%) center/cover no-repeat !important;
   }
 }
 .CTA .title {
   color: hsl(0, 0%, 98%) !important;
+}
+
+footer {
+  background-color: hsl(233, 12%, 13%);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+footer .list_wrapper {
+  gap: 4rem;
+}
+footer .footer_li {
+  font-size: 1.7rem;
+  text-align: center;
+}
+footer .footer_li a {
+  color: hsl(0, 0%, 98%) !important;
+}
+footer .footer_li a:hover {
+  color: hsl(12, 88%, 59%) !important;
+}
+footer input {
+  padding: 14px 22px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+footer .copyright {
+  margin-top: 6rem;
 }/*# sourceMappingURL=styles.css.map */

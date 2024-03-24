@@ -1,0 +1,35 @@
+footer {
+    background-color: $very-dark-blue ;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    .list_wrapper {
+        gap: 4rem;
+    }
+
+    .footer_li {
+        font-size: 1.7rem;
+        text-align: center;
+        a {
+        color: $very-light-gray !important ;
+            &:hover {
+                color : $bright-red !important;
+            } 
+        }
+    }
+
+    input {
+        padding: 14px 22px ;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+.copyright {
+    margin-top: 6rem;
+
+}
+
+}
