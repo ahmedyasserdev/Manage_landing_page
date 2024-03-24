@@ -1,0 +1,11 @@
+.illustration-intro::before {
+    content: "";
+    background: url("/images/bg-tablet-pattern.svg") right top/cover no-repeat;
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  

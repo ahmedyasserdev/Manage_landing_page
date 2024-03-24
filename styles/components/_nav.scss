@@ -13,10 +13,8 @@
 }
 
 .header {
-    position: fixed !important;
-    top: 0 !important ;
-    left: 0  !important;
-    width: 100% !important;
+    position: relative;
+    z-index: 9999 !important;
 
     @media (max-width : $breakpoint-md) {
         .navbar_list {
@@ -31,7 +29,7 @@
                 -moz-border-radius: 12px;
                 -ms-border-radius: 12px;
                 -o-border-radius: 12px;
-                & > li {}
+                
 }
     }
     
