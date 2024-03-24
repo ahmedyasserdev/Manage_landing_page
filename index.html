@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
@@ -25,7 +25,7 @@
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary py-5 bg-white header"
       >
-        <div class="container flex-between  ">
+        <div class="container flex-between">
           <a class="navbar-brand flex-grow-1" href="#">
             <img src="/images/logo.svg" alt="logo" class="object-fit-contain" />
           </a>
@@ -69,18 +69,20 @@
               </li>
             </ul>
           </div>
-          <button class="btn button d-none d-lg-flex ">Get Started</button>
+          <button class="btn button d-none d-lg-flex">Get Started</button>
         </div>
       </nav>
       <!-- finish header -->
 
       <!-- Start Hero -->
-      <section class="py-5 ">
+      <section class="py-5">
         <div class="container">
-          <div class="row d-flex justify-content-between  align-items-center  flex-wrap-reverse">
+          <div
+            class="row d-flex justify-content-between align-items-center flex-wrap-reverse"
+          >
             <div class="col-md-6">
               <div
-                class="d-flex align-items-center align-items-md-start  text-center text-md-start flex-column gap-4"
+                class="d-flex align-items-center align-items-md-start text-center text-md-start flex-column gap-4"
               >
                 <h1 class="text-5">
                   Bring everyone together to build better products.
@@ -94,7 +96,7 @@
                 <a href="#" class="btn button">Get Started</a>
               </div>
             </div>
-            <div class="col-md-6 position-relative z-2  illustration-intro">
+            <div class="col-md-6 position-relative z-2 illustration-intro">
               <img src="/images/illustration-intro.svg" alt="hero" />
             </div>
           </div>
@@ -102,8 +104,94 @@
       </section>
 
       <!-- End Hero -->
+
+      <!--  Start features -->
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-md-flex flex-column justify-content-center gap-md-3 text-center text-md-start">
+                <h2 class="text-4 fw-bold">What's different about Manage?</h2>
+                <p class="lh-lg">
+                  Manage provides all the functionality your team needs, without the
+                  complexity. Our software is tailor-made for modern digital product
+                  teams.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-md-6 gap-md-3">
+              <article class="feature_content">
+                <div class="headings_container">
+                  <h5 class="num">01</h5>
+                  <h5 class="feature_content-title">Track company-wide progress</h5>
+                </div>
+                <p class="lh-lg">
+                  See how your day-to-day tasks fit into the wider vision. Go from
+                  tracking progress at the milestone level all the way done to the
+                  smallest of details. Never lose sight of the bigger picture again.
+                </p>
+              </article>
+      
+              <article class="feature_content">
+                <div class="headings_container">
+                  <h5 class="num">02</h5>
+                  <h5 class="feature_content-title">Advanced built-in reports</h5>
+                </div>
+                <p class="lh-lg">
+                  Set internal delivery estimates and track progress toward company
+                  goals. Our customisable dashboard helps you build out the reports
+                  you need to keep key stakeholders informed.
+                </p>
+              </article>
+      
+              <article class="feature_content">
+                <div class="headings_container">
+                  <h5 class="num">03</h5>
+                  <h5 class="feature_content-title">Everything you need in one place</h5>
+                </div>
+                <p class="lh-lg">
+                  Stop jumping from one service to another to communicate, store files,
+                  track tasks and share documents. Manage offers an all-in-one team
+                  productivity solution.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--  End features -->
+
+
+
+
+
+
+
+
+
+
+
+      <div class="swiper-container section-padding ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+
     </main>
 
     <script src="/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+ 
   </body>
 </html>
